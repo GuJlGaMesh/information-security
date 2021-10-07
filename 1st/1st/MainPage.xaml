@@ -13,7 +13,10 @@
 			<RowDefinition Height="527*"/>
 			<RowDefinition Height="66*"/>
 		</Grid.RowDefinitions>
-		<Border BorderThickness="1" Background="AntiqueWhite" BorderBrush="AntiqueWhite" HorizontalAlignment="Left" Height="132" Margin="125,231,0,0" VerticalAlignment="Top" Width="740" CornerRadius="7,7,7,7"/>
+		<Border BorderThickness="1" Background="BurlyWood"  BorderBrush="AntiqueWhite" HorizontalAlignment="Left" Height="250" Margin="125,231,0,0" VerticalAlignment="Top" Width="740" CornerRadius="7,7,7,7">
+
+
+		</Border>
 		<TextBlock x:Name="tbStartText" HorizontalAlignment="Left" Margin="125,54,0,0" Text="Исходный текст" TextWrapping="Wrap" VerticalAlignment="Top"  Width="160" Height="39">
 			<TextBlock.RenderTransform>
 				<ScaleTransform ScaleX="1.5" ScaleY="1.5" />
@@ -26,10 +29,13 @@
 		</TextBlock>
 
 		<TextBox x:Name="inputString" HorizontalAlignment="Left" Margin="398,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="466" Height="32"/>
-		<TextBox x:Name="inputKey" HorizontalAlignment="Left" Margin="398,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" Height="32"/>
-		<TextBlock x:Name="tbResult" HorizontalAlignment="Left" Margin="201,258,0,0" Foreground="Black" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="544" Height="85"/>
-		<TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="636,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="32"/>
-
+		<TextBox x:Name="inputKey1" HorizontalAlignment="Left" Margin="398,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" Height="32" Text="54213"/>
+		<TextBlock x:Name="tbResult" HorizontalAlignment="Left" Margin="201,258,0,0" Foreground="Black" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="544" Height="34"/>
+		<TextBox x:Name="inputKey2" HorizontalAlignment="Left" Margin="636,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="32" Text="12453"/>
+		<RadioButton x:Name="rbCrypt" Content="Шифровать" Foreground="Black" GroupName="buttons" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="332,371,563,72"/>
+		<RadioButton x:Name="rbDecrypt" Content="Дешифровать" Foreground="Black" GroupName="buttons"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="508,371,374,87"/>
+		<Button x:Name="button_Copy1" Content="X" Foreground="White" HorizontalAlignment="Stretch" Background="Black" CornerRadius="7" VerticalAlignment="Stretch" Click="Button_OnClick" Margin="143,242,818,216"/>
+		<Button x:Name="button_Copy" Content="Результат" Foreground="White" HorizontalAlignment="Stretch" Background="Black" CornerRadius="7" VerticalAlignment="Stretch" Click="InputString_OnLostFocus" Margin="332,314,385,144"/>
 
 	</Grid>
 </Page>
