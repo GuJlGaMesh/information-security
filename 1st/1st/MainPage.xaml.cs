@@ -46,34 +46,39 @@ namespace _1st
 						return;
 					}
 
-					var input = inputString.Text.Replace(' ', '_');
-					input = input.PadRight(25, '_');
+					var input = inputString.Text;//.Replace(' ', '_');
+					input = input.PadRight(25, ' ');
 					var crypt = new StringBuilder("".PadRight(25));
 
 					Key1 = inputKey1.Text.Select(x => Convert.ToInt32(x.ToString()) - 1).ToArray();
 					Key2 = inputKey2.Text.Select(x => Convert.ToInt32(x.ToString()) - 1).ToArray();
 
-					for (var i = 0; i < 5; i++)
+					var matrix1 = Matrix;
+
+					for (int i = 0, index = 0; i < 5; i++)
 					{
-						for (var j = 0; j < 5; j++)
+						for (var j = 0; j < 5; j++, index++)
 						{
 							if (rbCrypt.IsChecked ?? false)
-								Matrix[Key1[i], Key2[j]] = input[j + i * 5];
+								Matrix[Key1[i], j] = input[index];
+							if (rbDecrypt.IsChecked ?? false)
+								matrix1[j, Key2[i]] = input[index];
+
 						}
 					}
 
-					for (var i = 0; i < 5; i++)
+					for (int i = 0, index = 0; i < 5; i++)
 					{
-						for (var j = 0; j < 5; j++)
+						for (var j = 0; j < 5; j++, index++)
 						{
 							if (rbCrypt.IsChecked ?? false)
 							{
-								crypt[j + 5 * i] = Matrix[Key2[i], Key1[j]];
+								crypt[index] = Matrix[j, Key2[i]];
 							}
 
 							if (rbDecrypt.IsChecked ?? false)
 							{
-								crypt[i + j * 5] = Matrix[Key1[j], Key2[i]];
+								crypt[index] = Matrix[Key1[i], j];
 							}
 						}
 					}
