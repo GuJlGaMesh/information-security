@@ -14,9 +14,9 @@
 		<TextBox x:Name="result_Crypted" HorizontalAlignment="Left" Margin="325,503,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="543"/>
 		<TextBlock HorizontalAlignment="Left" Margin="189,503,0,0" Text="Результат:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="135"/>
 		<Button x:Name="button" Content="Результат" FontSize="20" CornerRadius="7" Margin="315,384,0,0" Click="Button_OnClick" VerticalAlignment="Top" Width="543" Height="52"/>
-		<TextBox x:Name="tb_P" HorizontalAlignment="Left" Margin="356,246,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+		<TextBox x:Name="tb_P" HorizontalAlignment="Left" Margin="356,246,0,0" FontSize="20" Text="11" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
 		<TextBlock HorizontalAlignment="Left" Margin="317,246,0,0" Text="P:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="37" />
-		<TextBox x:Name="tb_Q" HorizontalAlignment="Left" Margin="670,246,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+		<TextBox x:Name="tb_Q" HorizontalAlignment="Left" Text="5" Margin="670,246,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
 		<TextBlock HorizontalAlignment="Left" Margin="628,246,0,0" Text="Q:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="29"/>
 		<TextBox x:Name="tb_Phi" HorizontalAlignment="Left" Margin="325,602,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
 		<TextBlock HorizontalAlignment="Left" Margin="288,603,0,0" Text="Phi:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="37" RenderTransformOrigin="-0.441,0.606" />
