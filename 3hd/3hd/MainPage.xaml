@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="_3hd.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_3hd"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<TextBox x:Name="input" HorizontalAlignment="Left" Margin="315,147,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="543"/>
+		<TextBlock HorizontalAlignment="Left" Margin="179,147,0,0" Text="Сообщение:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="135"/>
+		<TextBox x:Name="result_Crypted" HorizontalAlignment="Left" Margin="325,503,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="543"/>
+		<TextBlock HorizontalAlignment="Left" Margin="189,503,0,0" Text="Результат:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="135"/>
+		<Button x:Name="button" Content="Результат" FontSize="20" CornerRadius="7" Margin="315,384,0,0" Click="Button_OnClick" VerticalAlignment="Top" Width="543" Height="52"/>
+		<TextBox x:Name="tb_P" HorizontalAlignment="Left" Margin="356,246,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+		<TextBlock HorizontalAlignment="Left" Margin="317,246,0,0" Text="P:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="37" />
+		<TextBox x:Name="tb_Q" HorizontalAlignment="Left" Margin="670,246,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+		<TextBlock HorizontalAlignment="Left" Margin="628,246,0,0" Text="Q:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="29"/>
+		<TextBox x:Name="tb_Phi" HorizontalAlignment="Left" Margin="325,602,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+		<TextBlock HorizontalAlignment="Left" Margin="288,603,0,0" Text="Phi:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="37" RenderTransformOrigin="-0.441,0.606" />
+		<TextBox x:Name="tb_D" HorizontalAlignment="Left" Margin="512,602,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+		<TextBlock HorizontalAlignment="Left" Margin="489,603,0,0" Text="D:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="29"/>
+		<TextBox x:Name="tb_E" HorizontalAlignment="Left" Margin="706,602,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+		<TextBlock HorizontalAlignment="Left" Margin="687,602,0,0" Text="E:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="29"/>
+		<TextBox x:Name="result_Decrypted" HorizontalAlignment="Left" Margin="325,552,0,0" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="543"/>
+		<TextBlock HorizontalAlignment="Left" Margin="189,552,0,0" Text="Расшифровка:" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="135"/>
+
+	</Grid>
+</Page>

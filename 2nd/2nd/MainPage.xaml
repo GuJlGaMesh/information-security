@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="_2nd.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_2nd"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<TextBox x:Name="alphabet" HorizontalAlignment="Center" Margin="0,111,0,0" Text="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧЩЬЪЫЭЮЯ" TextWrapping="Wrap" VerticalAlignment="Top" Width="610" Height="51"/>
+		<TextBox x:Name="input" HorizontalAlignment="Center" Margin="0,251,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="610"/>
+		<TextBox x:Name="result" HorizontalAlignment="Center" Margin="0,386,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.306,0.084" Width="610" Height="101"/>
+		<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="99,111,0,0" Text="Алфавит" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="155"/>
+		<TextBlock HorizontalAlignment="Left" Margin="99,387,0,0" Text="Результат" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="155"/>
+		<TextBlock HorizontalAlignment="Left" Margin="99,251,0,0" Text="Входная строка" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="155"/>
+		<TextBlock HorizontalAlignment="Left" Margin="99,183,0,0" Text="Ключ" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="155"/>
+		<TextBox x:Name="key" HorizontalAlignment="Center" Margin="0,183,0,0" Text="БАЙКЕР" TextWrapping="Wrap" VerticalAlignment="Top" Width="610" Height="51"/>
+		<Button x:Name="button" Content="Результат" Margin="0,575,0,0" CornerRadius="7" Click="Button_OnClick" VerticalAlignment="Top" Width="610" HorizontalAlignment="Center" Height="66"/>
+
+	</Grid>
+</Page>
