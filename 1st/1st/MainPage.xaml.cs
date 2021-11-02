@@ -46,7 +46,7 @@ namespace _1st
 						return;
 					}
 
-					var input = inputString.Text;//.Replace(' ', '_');
+					var input = inputString.Text;
 					input = input.PadRight(25, ' ');
 					var crypt = new StringBuilder("".PadRight(25));
 
